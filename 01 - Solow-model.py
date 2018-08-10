@@ -2,19 +2,6 @@ import matplotlib.pyplot as plt
 
 
 class SolowModel(object):
-    """
-    Parameters
-    ==========
-
-    n = population growth
-    s = savings rate
-    delta = depreciation rate
-    alpha = share of labor
-    z = productivity parameter
-    k = current capital stock
-
-    """
-
     def __init__(self, n=0.001, s=0.25, delta=0.2, alpha=0.2, z=2.0, k=1.0):
         self.n = n
         self.s = s
@@ -42,7 +29,6 @@ class SolowModel(object):
             seq.append(self.k)
             self.update()
         return seq
-
 
 # plot model
 s_mod = SolowModel()
