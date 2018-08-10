@@ -26,8 +26,7 @@ class SolowModel(object):
 
     @property
     def solow_func(self):
-        lhs = (self.s * self.z * self.k ** self.alpha +
-               (1 - self.delta) * self.k) / (1 - self.n)
+        lhs = (self.s * self.z * self.k ** self.alpha + (1 - self.delta) * self.k) / (1 - self.n)
         return lhs
 
     def update(self) -> object:
@@ -35,8 +34,7 @@ class SolowModel(object):
 
     @property
     def steady_state(self):
-        new_capital: float = ((self.s * self.z) / (self.n + self.delta)
-                              ) ** (1 / (1 - self.alpha))
+        new_capital: float = ((self.s * self.z) / (self.n + self.delta)) ** (1 / (1 - self.alpha))
         return new_capital
 
     def generate_timeseries(self, t: object) -> object:
