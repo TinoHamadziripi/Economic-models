@@ -15,8 +15,7 @@ class SolowModel(object):
 
     """
 
-    def __init__(self, n=0.001, s=0.25, delta=0.2,
-                 alpha=0.2, z=2.0, k=1.0):
+    def __init__(self, n=0.001, s=0.25, delta=0.2, alpha=0.2, z=2.0, k=1.0):
         self.n = n
         self.s = s
         self.delta = delta
